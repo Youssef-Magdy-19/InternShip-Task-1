@@ -310,6 +310,9 @@ footer img{
     width: 150px;
     height: 50px;
 }
+footer nav ul {
+    justify-content: space-around;
+}
 footer nav ul li a{
     font-size: 14px;
 }
@@ -324,6 +327,7 @@ footer .Subscribe input{
     border: none;
     background-color: transparent;
     padding: 7.5px 10px;
+    color: (165, 164, 164) !important;
 }
 input::placeholder{
     color: (165, 164, 164) !important;
@@ -387,7 +391,9 @@ footer .Subscribe button{
         width: 100% !important;
     }
     .fixed-div{
-        display: none;
+        /* display: none !important; */
+        top: 20% !important;
+        left: 5% !important;
     }
     .feathers div.items-center {
         flex-direction: column-reverse;
