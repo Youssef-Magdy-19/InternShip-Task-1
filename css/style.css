@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: Outfit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+.items-center {
+    align-items: center
+}
+
+.items-end{ align-items: end; }
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100% !important;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.cursor-pointer{ cursor: pointer; }
+/* ----------------------- style for header ----------------------- */
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(66, 173, 136);
+
+}
+
+.header-img {
+    background-color: rgba(185, 223, 185, 0.425);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+nav ul li {
+    padding: 3.5px 15px;
+}
+
+.home-link {
+    border-bottom: 1px solid rgb(72, 88, 72);
+    border-radius: 2.5px;
+    background-color: rgba(185, 223, 185, 0.425)
+}
+
+/* ------------------------- main section (hero) ------------------------------ */
+
+.hero {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-top: 60px;
+    padding: 220px 0 !important;
+}
+
+.hero .progress {
+    height: 4px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+}
+
+.hero .progress div {
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.hero button,
+.costEarth button {
+    padding: 7px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: goldenrod;
+}
+
+/* ---------------------------- feathers section ------------------- */
+.feathers {
+    min-height: 85vh;
+    background: #fff;
+    position: relative;
+    /* padding: 10vh 0; */
+}
+
+.feathers p {
+    line-height: 25px;
+}
+
+.feathers span {
+    color: green;
+    margin-right: 5px;
+}
+
+.feathers .fixed-div {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: goldenrod;
+    right: 20%;
+    top: 45%;
+    padding: 15px 10px;
+}
+
+/* --------------------- costEarth Section --------------------- */
+.costEarth {
+    height: 50vh;
+    width: 100%;
+    background-image: url(../images/8116\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* -------------------- solarKits section ----------- */
+.solarKits {
+    padding: 45px 0;
+}
+
+.card {
+    flex: 1 1 calc(33.3% - 13.34px);
+    max-width: calc(33.3% - 13.34px);
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 0px gray;
+}
+
+.solar-desc {
+    margin: 10px 0 30px 0;
+}
+.card-img{
+    background-color: rgb(225, 238, 225) !important;
+}
+.card a {
+    color: green;
+}
+.fa-arrow-right{
+    margin-left: 15px;
+}
+/* -------------------- bg-img -------------- */
+.bg-img {
+    min-height: 50vh;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img div div {
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 25px 30px;
+    border-radius: 7.5px;
+    width: 80%;
+    margin: auto;
+}
+
+/* ------------------ Energy-Innovators Section & values section --------------------- */
+.values .cards .card , .Energy-Innovators .cards .card{
+    border: 1px green solid;
+    box-shadow: none;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: rgb(235, 252, 247);
+}
+.desc-section h2{
+    font-size: 25px;
+    margin: 5px 0 15px 0;
+}
+.card-2 {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+}
+
+.card-img {
+    background-color: aquamarine;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.card-2 .body-card h5{
+    font-size: 18px !important;
+}
+.card-2 .body-card p{
+    margin: 10px 0 !important;
+}
+/* values ..... */
+.values{
+    background-color: white;
+    padding: 55px 0;
+}
+.values h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.values p{
+    color: grey;
+}
+.values .card i{
+    font-size: 35px;
+}
+.values .values-desc p{
+    margin-bottom: 25px;
+}
+.values h4{
+    margin: 15px 0;
+    font-size: 18px;
+}
+.values p{
+    margin-bottom: 10px;
+}
+/* ----------------- review ----------------- */
+.review{
+    padding: 40px 0;
+}
+.review .right-child{
+    background-color: rgb(235, 252, 247);
+    padding: 25px;
+    border-radius: 10px;
+}
+.bolits div{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(194, 194, 194);
+}
+.bolits div:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.699);
+}
+.arrows{
+    align-items: end;
+}
+.arrows .flex{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.703);
+    color: rgba(0, 0, 0, 0.705);
+}
+/* -------------- footer -------------------- */
+footer{
+    padding: 30px 0;
+    background-color: rgb(44, 55, 77);
+    color: #fff;
+}
+footer img{
+    background-color: rgb(76, 98, 141);
+    padding: 5px 50px;
+    width: 150px;
+    height: 50px;
+}
+footer nav ul li a{
+    font-size: 14px;
+}
+footer .Subscribe{
+    border: 1px solid rgb(165, 164, 164);
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: rgba(51, 66, 97, 0.9);
+}
+footer .Subscribe input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 7.5px 10px;
+}
+input::placeholder{
+    color: (165, 164, 164) !important;
+}
+footer .Subscribe button{
+    border-radius: 20px;
+    border: none;
+    padding: 7.5px 20px;
+    background-color: rgb(247, 188, 40);
+    color: #fff;
+}
+.line{
+    height: 2px ;
+    width: 100%;
+    background-color: rgb(77, 87, 109);
+    margin: 30px 0;
+}
+.copyright li {
+    padding: 0;
+}
+.copyright a{
+    font-size: 12px;
+    border-right: 1px solid rgb(96, 108, 134);
+    color: rgb(148, 159, 182);
+    padding:0 15px ;
+}
+.copyright p{
+    color:rgb(148, 159, 182);
+    font-size: 12px;
+}
+/* --------------------------------- Resbonsive ---------------------------- */
+@media(max-width:980px) {
+    .cards {
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+    .card-2{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+    header nav{
+        display: none;
+    }
+    
+    .hero {
+        height: 55vh !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+    }
+
+    .hero-content h1 {
+        width: 100% !important;
+    }
+    .fixed-div{
+        display: none;
+    }
+    .feathers div.items-center {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .feathers img {
+        width: 100%;
+    }
+
+    .costEarth div.text-white {
+        width: 100% !important;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .bg-img div div {
+        width: 100%;
+    }
+    .review .rev{
+        flex-direction: column;
+    }
+    .review .left-child{
+        text-align: center;
+    }
+    .review .left-child , .review .right-child{
+        width: 100% !important;
+    }
+    footer{
+        text-align: center;
+    }
+    footer img{
+        margin-bottom: 15px ;
+    }
+    .links-subscribe{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Subscribe{
+        margin: 15px;
+    }
+    .line{
+        margin: 15px 0;
+    }
+}
+@media(max-width:567px) {
+    
+    .Energy-Innovators{
+        flex-direction: column;
+    }
+    .Energy-Innovators .desc-section{
+        width: 100% !important;
+    }
+    .Energy-Innovators .cards{
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright{
+        flex-direction: column;
+    }
+    .copyright p{
+        margin-top: 20px;
+    }
+}
